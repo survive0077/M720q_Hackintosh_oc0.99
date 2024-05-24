@@ -29,7 +29,7 @@ All the software used are up-to-date until 2024/5/1
 | Model          | NEC8(ThinkCentre M720 Tiny)                         |
 | CPU            | i7-8700(coffee lake, 65w)                           |
 | Graphics Card  | Quadro K420(Kepler, GK107) / Intel UHD Graphics 630 |
-| RAM            | 8G*2 Hynix DDR4 2400                                |
+| RAM            | 8Gx1 Hynix DDR4 2400 (later update to 8Gx2)         |
 | ROM            | KIOXIA RC10 512G                                    |
 | WIFI/Bluetooth | Dell DW1707                                         |
 | Audio          | Realtek ALC235                                      |
@@ -51,12 +51,20 @@ All the software used are up-to-date until 2024/5/1
 
 **Implement Functions**
 
+- Create SSDTs for M720q
 - USB mapping
 - Fixing Audio
 - Fixing DRM
 - Fixing iServices
+- Fixing power management
 
-**Note**
+**Known Issues**
+
+- Type C not work (maybe just a problem of my M720q)
+- HDMI of `iGPU` not fixed (coming soon)
+- Sleeping problem (difficult to solve now)
+
+**Notes**
 
 - `AppleCpuPmCfgLock` and `AppleXcpmCfgLock` are **`False`**
 - Quadro K420 is natively supported in Big Sur 11.7.x
@@ -65,3 +73,14 @@ All the software used are up-to-date until 2024/5/1
 - Use **`alcid=17`** to drive the Realtek ALC235
 - Use **`07009B3E`** for `AAPL,ig-platform-id` and **`Shiki=40`** to fix the DRM
 
+**Screenshots**
+
+![1](pic/1.png)
+
+![2](pic/2.png)
+
+![3](pic/3.png)
+
+![4](pic/4.png)
+
+![5](pic/5.png)
