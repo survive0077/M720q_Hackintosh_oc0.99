@@ -4,6 +4,12 @@ All the software used are up-to-date until 2024/5/1
 
 This EFI can be used in MacOS 11, 12, 13 and 14
 
+**Releases**
+
+[Release Version](https://github.com/survive0077/M720q_Hackintosh_oc0.99/releases/download/v2.0/release.zip) : Use release-version Kexts without any debugging information
+
+[Debug Version](https://github.com/survive0077/M720q_Hackintosh_oc0.99/releases/download/v2.0/debug.zip): Use debug-version Kexts with all debugging information
+
 **TO DO**
 
 - Use [GenSMBIOS](https://github.com/corpnewt/GenSMBIOS) to generate your own SMBIOS
@@ -40,7 +46,7 @@ This EFI can be used in MacOS 11, 12, 13 and 14
 | Model          | NEC8 (ThinkCentre M720 Tiny)                         |
 | CPU            | QQC0 (I9 9900T ES, coffee lake, 35w)                 |
 | Graphics Card  | Intel UHD Graphics 630 / Quadro K420 (Kepler, GK107) |
-| RAM            | 8Gx1 Hynix DDR4 2400 (later update to 8Gx2)          |
+| RAM            | 8Gx2 Crucial DDR4 2666                               |
 | ROM            | KIOXIA RC10 512G                                     |
 | WIFI/Bluetooth | BCM94352Z (DW1560 Lenovo)                            |
 | Audio          | Realtek ALC235                                       |
@@ -62,7 +68,7 @@ This EFI can be used in MacOS 11, 12, 13 and 14
 
 **Implement Functions**
 
-- Create SSDTs for M720q
+- Create SSDTs for NEC8 / M720q
 - USB mapping
 - Patching HDMI of `iGPU`
 - Fixing Audio
