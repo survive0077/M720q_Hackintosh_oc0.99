@@ -4,6 +4,13 @@ All the software used are up-to-date until 2024/5/1
 
 This EFI can be used in MacOS 11, 12, 13 and 14
 
+**Warning**
+
+- MacOS 15 is **not** tested
+
+- If needed, please **update** all Kexts in EFI
+- The Driver of wireless network card (DW1650) **may fail**
+
 **Releases**
 
 [Release Version](https://github.com/survive0077/M720q_Hackintosh_oc0.99/releases/download/v2.0/release.zip) : Use release-version Kexts without any debugging information
@@ -15,7 +22,7 @@ This EFI can be used in MacOS 11, 12, 13 and 14
 - Use [GenSMBIOS](https://github.com/corpnewt/GenSMBIOS) to generate your own SMBIOS
   - Choose type: `Macmini8,1`
   - Get `Serial`, `Board Serial`, `SmUUID`, `ROM` and copy to `config.plist/Generic`
-  - More Info see [Desktop Coffee Lake | OpenCore Install Guide (dortania.github.io)](https://dortania.github.io/OpenCore-Install-Guide/config.plist/coffee-lake.html#platforminfo)
+  - For more Info, please see [Desktop Coffee Lake | OpenCore Install Guide (dortania.github.io)](https://dortania.github.io/OpenCore-Install-Guide/config.plist/coffee-lake.html#platforminfo)
 
 **BIOS Setting**
 
@@ -23,13 +30,13 @@ This EFI can be used in MacOS 11, 12, 13 and 14
   - [NEC BIOS](https://support.nec-lavie.jp/driver/detail?module_no=11713) (2024.6.4 latest: `M1UKT73A`)
   - [Lenovo BIOS](https://think.lenovo.com.cn/support/driver/driverdetail.aspx?DEditid=126177&driverID=undefined&treeid=undefined) (2024.6.4 latest: `M1UKT75A`)
 
-- Ensure the microcode of CPU is supported by BIOS (**especially if use 9th Intel**)
+- Ensure the microcode of CPU is supported by BIOS (**especially if using 9th Intel**)
   - For example, the microcode of QQC0 is `906EC`
   - Latest `M1UKT73A` supports `906EC` 
   - Original `M1UKT1BA` doesn’t support `906EC`
 
-- **!!!Highly-risk operation!!!** Ensure unlock `CFG Lock` through modifying BIOS
-  - If skip, set `AppleCpuPmCfgLock` and `AppleXcpmCfgLock` to **`True`**
+- **!!!Highly-risk operation!!!** Make sure to unlock `CFG Lock` by modifying BIOS
+  - If skipping, set `AppleCpuPmCfgLock` and `AppleXcpmCfgLock` to **`True`**
 - Choose **`Auto`** in `BIOS/Video Setup/Select Active Video` to use `dGPU`
 
 **Software**
@@ -68,8 +75,8 @@ This EFI can be used in MacOS 11, 12, 13 and 14
 
 **Implement Functions**
 
-- Create SSDTs for NEC8 / M720q
-- USB mapping
+- Creating SSDTs for NEC8 / M720q
+- Mapping USB
 - Patching HDMI of `iGPU`
 - Fixing Audio
 - Fixing DRM
