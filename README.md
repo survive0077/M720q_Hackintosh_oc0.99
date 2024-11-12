@@ -8,14 +8,14 @@ This EFI can be used in MacOS 11, 12, 13 and 14
 
 - MacOS 15 is **not** tested
 
-- If needed, please **update** all Kexts in EFI
+- If needed, please **update** all Kexts and OpenCore in EFI
 - The Driver of wireless network card (DW1650) **may fail**
 
 **Releases**
 
-[Release Version](https://github.com/survive0077/M720q_Hackintosh_oc0.99/releases/download/v2.0/release.zip) : Use release-version Kexts without any debugging information
+[Release Version](https://github.com/survive0077/M720q_Hackintosh_oc0.99/releases/download/v3.0/release.rar) : Use release-version Kexts without any debugging information
 
-[Debug Version](https://github.com/survive0077/M720q_Hackintosh_oc0.99/releases/download/v2.0/debug.zip): Use debug-version Kexts with all debugging information
+[Debug Version](https://github.com/survive0077/M720q_Hackintosh_oc0.99/releases/download/v3.0/debug.rar): Use debug-version Kexts with all debugging information
 
 **TO DO**
 
